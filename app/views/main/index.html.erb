@@ -1,0 +1,33 @@
+  <div id="posts">
+  <% @aggregate.each_with_index do |item,index| %>
+    <div id="post-<%= index %>" class="post feed-<%= item[:feed_id] %>">
+      <div class="post-inner">
+        <h2 class="post-title"><%= raw item[:feed_item][:title] %></h2>
+        <em class="post-date">
+          <%= l Time.parse(item[:feed_item][:published].to_s), :format => :short %>
+          &middot;
+          <a title="<%= item[:feed_title] %>" href="<%= item[:feed_item][:link] %>" target="_blank"><%= item[:feed_title] %></a>
+        </em>
+        <div class="post-content">
+          <div class="post-image">
+            <% @doc = Nokogiri::HTML(item[:feed_item][:body]) %>
+            <img src="<%= @doc.css('img')[0][:src] unless @doc.css('img').empty? %>" />
+          </div>
+          <div class="post-body">
+            <% images = @doc.search('img')
+                images.remove %>
+            <%= @doc.content %>
+          </div>
+        </div>
+      </div>  
+      <div class="post-meta">
+        <ul class="tags">
+        <% strip_tags(item[:feed_item][:body]).summarize(:topics => true)[1].split(',').each do |topic| %>
+          <li><%= topic.force_encoding("UTF-8") %></li>
+        <% end %>
+        </ul>
+        <a href="" class="button zoom">Zoom &oplus;</a>
+      </div>
+    </div>
+  <% end %>
+  </div>

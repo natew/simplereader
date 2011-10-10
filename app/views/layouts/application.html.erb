@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nate Wienert | Reading List</title>
+    
+    <%= stylesheet_link_tag 'base', 'layout', 'screen' %>
+    <%= javascript_include_tag 'jquery', 'application' %>
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+        <h1>What I'm Reading...</h1>
+        <p>While I procrastinate on my portfolio enjoy some of my favorite RSS feeds, updated hourly (try resizing your browser!).</p>
+    </header>
+  
+    <div id="main">
+        <%= yield %>
+    </div>
+    
+  	<div id="post_modal"></div><div id="overlay"></div>
+  	
+  	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-89454-6");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+  </body>
+</html>

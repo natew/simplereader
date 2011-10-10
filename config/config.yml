@@ -1,0 +1,25 @@
+feeds:
+ - http://feedproxy.google.com/nymag/vulture
+ - http://feeds.feedburner.com/uncrate
+ - http://feeds.feedburner.com/acquire
+ - http://hypebeast.com/feed/
+ - http://hypem.com/feed/popular/3day/1/feed.xml
+ - http://www.engadget.com/tag/features/rss.xml
+ - http://feeds.feedburner.com/fubiz
+ - http://www.acontinuouslean.com/feed/
+ - http://themoment.blogs.nytimes.com/feed/
+ - http://fluokids.blogspot.com/feeds/posts/default?alt=rss
+ - http://www.autoblog.com/category/design-style/rss.xml
+ - http://www.fastcompany.com/rss.xml
+ - http://www.newsvine.com/_feeds/rss2/cs?id=38&f=u&d=v&n=6&s=s&c=a
+ - http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&output=rss
+ - http://feeds.nytimes.com/nyt/rss/HomePage
+ - http://feeds.gawker.com/lifehacker/full
+ - http://feeds2.feedburner.com/theweeklydope
+ - http://feeds.kottke.org/main
+ - http://bassdownload.com/?feed=rss2
+ - http://fathom.info/latest/feed/
+ - http://feedproxy.google.com/ILoveTypography
+ - http://feeds.feedburner.com/FontsInUse
+ - http://beautifulpixels.com/feed/
+ - http://news.ycombinator.com/rss

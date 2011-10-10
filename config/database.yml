@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  username: macbook
+  password: fluf499
+  host: localhost
+  database: menstimes_development
+
+test:
+  adapter: postgresql
+  username: macbook
+  password: fluf499
+  host: localhost
+  database: menstimes
+
+
+production:
+  adapter: postgresql
+  username: macbook
+  password: fluf499
+  host: localhost
+  database: menstimes
