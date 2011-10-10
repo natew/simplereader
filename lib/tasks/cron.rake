@@ -18,8 +18,8 @@ task :cron => :environment do
       new.parsed_feed = { :uri => feed.url, :title => feed.title, 
        					:items => feed.entries.map { |item| {:title => item.title, :published => item.published, :link => item.url, :body => item.content } } }
       new.save!
-    rescue
-      puts "failed"
+    rescue Exception => e
+      puts e.message
     end
   end
 end
